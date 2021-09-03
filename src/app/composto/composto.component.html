@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <h3>Cálculo de juros Composto </h3>
+  <div> Valor</div>
+  <input class="form-control" type="number" step="100" [(ngModel)]="valor" />
+
+
+  <div>Prazo:</div>
+  <input class="form-control" type="number" step="1" [(ngModel)]="prazo" />
+
+
+  <table>
+    <tr>
+    <tr *ngFor="let item of getJurosTable(); index as i">
+
+      <td>
+        Mês
+      </td>
+      <td>
+        {{i+1}}
+      </td>
+
+      <td>=</td>
+      <td>
+        {{getValorFinal()}}
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+<h3>Cálculo de juros simples </h3>
+<div> Valor</div>
+<input class="form-control" type="number" step="100" [(ngModel)]="valor" />
+
+
+<div>Prazo:</div>
+<input class="form-control" type="number" step="1" [(ngModel)]="prazo" />
+
+
+
+<div>Valor Final com juros: R${{getValorFinal()}}
